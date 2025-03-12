@@ -5,6 +5,8 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
   },
+  ssr: false,
+  spaLoadingTemplate: true,
   vite: {
     vue: {
      template: {
