@@ -1,21 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import {defineNuxtConfig} from 'nuxt/config'
+
 export default defineNuxtConfig({
     compatibilityDate: '2024-11-01',
     devtools: {enabled: true},
-    modules: ['@pinia/nuxt'],
-    future: {
-        compatibilityVersion: 4
-    },
-    typescript: {
-        typeCheck: true
-    },
+    css: ['@provetcloud/css'],
+    modules: ['@pinia/nuxt', '@nuxt/test-utils/module'],
     ssr: false,
     spaLoadingTemplate: true,
     vite: {
         vue: {
             template: {
                 compilerOptions: {
-                    isCustomElement: (tag) => tag.includes('-')
+                    isCustomElement: (tag: string) => tag.includes('-')
                 }
             }
         },
