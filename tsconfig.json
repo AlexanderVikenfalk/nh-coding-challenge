@@ -1,11 +1,14 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "typeRoots": [
-      "./node_modules/@types",
-      "./app/types"
-    ],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
     "paths": {
       "~/*": [
         "./*"
@@ -14,5 +17,21 @@
         "./app/*"
       ]
     },
-  }
+    "types": [
+      "node",
+      "@nuxt/types"
+    ]
+  },
+  "include": [
+    "nuxt.config.ts",
+    "vitest.config.ts",
+    "components/**/*.vue",
+    "layouts/**/*.vue",
+    "pages/**/*.vue",
+    ".nuxt/types/imports.d.ts"
+  ],
+  "exclude": [
+    "./app/**/*.test.ts",
+    "node_modules"
+  ]
 }
