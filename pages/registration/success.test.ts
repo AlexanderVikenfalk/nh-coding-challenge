@@ -1,4 +1,4 @@
-import {VueWrapper, mount, RouterLinkStub} from "@vue/test-utils";
+import {VueWrapper, mount} from "@vue/test-utils";
 import {createTestingPinia} from '@pinia/testing';
 import {it, expect, describe, beforeEach, afterEach, vi} from "vitest";
 import {useUserStore} from '../../stores/user';

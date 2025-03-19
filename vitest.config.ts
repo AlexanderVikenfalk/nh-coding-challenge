@@ -9,7 +9,6 @@ export default defineVitestConfig
     test: {
         globals: true,
         environment: 'nuxt',
-        setupFiles: ['./vitest.setup.ts'],
     },
     resolve: {
         alias: {
