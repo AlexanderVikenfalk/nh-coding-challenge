@@ -1,75 +1,106 @@
-# Nuxt Minimal Starter
+<a id="readme-top"></a>
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<br />
+<div align="center">
+  <h3 align="center">Nordhealth Coding Assignment</h3>
+</div>
 
-## Setup
+---
 
-Make sure to install dependencies:
+## Table of Contents
 
-```bash
-# npm
-npm install
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+- [Roadmap](#roadmap)
+- [Contact](#contact)
 
-# pnpm
-pnpm install
+---
 
-# yarn
-yarn install
+## About The Project
 
-# bun
-bun install
-```
+This project is a client-side registration form built with **Nuxt**. It leverages the **Provet Cloud component library**, which provides prebuilt UI components, to create a seamless user experience. The implementation focuses on:
 
-## Development Server
+### Features
 
-Start the development server on `http://localhost:3000`:
+- **Registration form**
+- **Success page**
+- **Frontend validation**
+- **Backend error handling**
+- **Unit tests**
 
-```bash
-# npm
-npm run dev
+### Built With
 
-# pnpm
-pnpm dev
+- **Language:** TypeScript
+- **Meta Framework:** Nuxt 3
+- **UI Library:** [Provet Cloud](https://www.provet.cloud/)
+- **Testing:** Vitest
+- **State Management:** Pinia
 
-# yarn
-yarn dev
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# bun
-bun run dev
-```
+---
 
-## Production
+## Getting Started
 
-Build the application for production:
+### Installation
 
-```bash
-# npm
-npm run build
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/AlexanderVikenfalk/nh-coding-challenge
+   ```
 
-# pnpm
-pnpm build
+2. **Install dependencies:**
+   Navigate to the root directory of the project and run:
+   ```sh
+   yarn
+   ```
+   or
+   ```sh
+   npm install
+   ```
 
-# yarn
-yarn build
+3. **Running the application:**
+   ```sh
+   yarn dev
+   ```
+   or
+   ```sh
+   npm run dev
+   ```
 
-# bun
-bun run build
-```
+4. **Running the tests:**
+   ```sh
+   yarn test
+   ```
+   or
+   ```sh
+   npm test
+   ```
 
-Locally preview production build:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-```bash
-# npm
-npm run preview
+---
 
-# pnpm
-pnpm preview
+## Roadmap
 
-# yarn
-yarn preview
+- [x] Implement registration form
+- [x] Implement success page
+- [x] Add frontend validation
+- [x] Handle backend error responses
+- [x] Write unit tests
+- [ ] Implement theme switcher
+- [ ] Add E2E tests
+- [ ] Add internationalization (i18n) support
 
-# bun
-bun run preview
-```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## Contact
+
+ **LinkedIn:** [Alexander Vikenfalk](https://www.linkedin.com/in/alexander-vikenfalk/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
