@@ -76,11 +76,10 @@
 <script setup lang="ts">
 import {useForm} from "vee-validate";
 import {toTypedSchema} from "@vee-validate/zod";
-import {registrationFormSchema} from "@/utils/registrationFormSchema"
-import {useUserStore} from '@/stores/user'
-import type {RegistrationFormData} from "@/types/types";
+import {userSchema} from "~/utils/userSchema"
+import {useUserStore} from '~/stores/user'
 
-const {errors, defineField, meta, handleSubmit} = useForm({validationSchema: toTypedSchema(registrationFormSchema)})
+const {errors, defineField, meta, handleSubmit} = useForm({validationSchema: toTypedSchema(userSchema)})
 const user = useUserStore();
 
 const [email] = defineField('email')
@@ -91,9 +90,7 @@ const [receiveNewsletter] = defineField('receiveNewsletter')
 const showPassword = ref<boolean>(false);
 const {isPending} = storeToRefs(user);
 
-
-const onSubmit = handleSubmit((userData: RegistrationFormData) => {
-  console.log(userData)
+const onSubmit = handleSubmit((userData: UserData) => {
   user.register(userData)
 })
 </script>
