@@ -1,17 +1,20 @@
 export const useAlertStore = defineStore('alert', () => {
-    const message = ref('')
-    const showAlert = ref(false)
-    const variant = ref('default')
 
-    function show(newMessage: string, newVariant: string = 'default') {
+    type Variant = 'default' | 'danger'
+
+    const message = ref<string>('')
+    const showAlert = ref<boolean>(false)
+    const variant = ref<Variant>('default')
+
+    function show(newMessage: string, newVariant: Variant = 'default'): void {
         message.value = newMessage
         variant.value = newVariant
         showAlert.value = true
     }
 
-    function reset() {
+    function reset(): void {
         message.value = ''
-        variant.value = ''
+        variant.value = 'default'
         showAlert.value = false
     }
 
